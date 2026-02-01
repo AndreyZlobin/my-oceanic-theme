@@ -1,0 +1,40 @@
+{
+  "name": "my-oceanic-theme",
+  "displayName": "My Oceanic Theme",
+  "description": "Dark theme inspired by Material Oceanic with enhanced semantic highlighting for TypeScript, Vue, and CSS",
+  "version": "1.0.0",
+  "publisher": "ZAndy",
+  "author": {
+    "name": "Andrey"
+  },
+  "scripts": {
+    "publish": "npx @vscode/vsce package --allow-missing-repository"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Themes"],
+  "keywords": [
+    "theme",
+    "dark",
+    "oceanic",
+    "material",
+    "vue",
+    "typescript",
+    "semantic highlighting"
+  ],
+  "galleryBanner": {
+    "color": "#263238",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "My Oceanic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/my-oceanic.json"
+      }
+    ]
+  }
+}
