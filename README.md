@@ -1,5 +1,5 @@
 # My Oceanic Theme
-
+https://marketplace.visualstudio.com/items?itemName=ZAndy.my-oceanic-theme
 A dark theme inspired by Material Oceanic with enhanced semantic highlighting.
 
 ## Features
