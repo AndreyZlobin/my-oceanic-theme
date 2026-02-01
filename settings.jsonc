@@ -1,0 +1,633 @@
+{
+  "workbench.editorAssociations": {
+    "*.tgz": "default"
+  },
+  "files.eol": "\n",
+  "extensions.ignoreRecommendations": true,
+  "explorer.confirmPasteNative": false,
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.gpuAcceleration": "on",
+
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Semantic highlighting
+  "editor.semanticHighlighting.enabled": true,
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+
+        // Типы и интерфейсы - зелёный italic
+        "type": { "foreground": "#C3E88D", "fontStyle": "italic" },
+        "interface": { "foreground": "#C3E88D", "fontStyle": "italic" },
+
+        // Классы - золотой
+        "class": "#FFCB6B",
+
+        // Функции - золотой, локальные (стрелочные) - синий
+        "function": "#FFCB6B",
+        "function.defaultLibrary": "#FFCB6B",
+        "function.local": { "foreground": "#82AAFF" },
+
+        // Переменные - светлый, readonly/defaultLibrary - белый
+        "variable": "#EEFFE3",
+        "variable.readonly": "#EEFFFF",
+        "variable.readonly.defaultLibrary": "#EEFFFF",
+        "variable.defaultLibrary": "#EEFFFF",
+
+        // Остальное
+        "parameter": "#F78C6C",
+        "property": "#EEFFFF",
+        // property.declaration убран - VS Code не различает getter/setter от shorthand props
+        "method": "#82AAFF",
+        "typeParameter": "#FFCB6B",
+        "namespace": "#C3E88D",
+        "enum": "#FFCB6B",
+        "enumMember": "#F78C6C",
+
+    }
+  },
+
+  // ============================================================================
+  // ШРИФТЫ
+  // ============================================================================
+  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.fontWeight": "300",
+  "editor.lineHeight": 24,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "300",
+
+  // ============================================================================
+  // РЕДАКТОР
+  // ============================================================================
+  // Лучший поиск
+  "search.showLineNumbers": true,
+  // Sticky scroll - видишь в какой функции/классе находишься
+  "editor.stickyScroll.enabled": true,
+    // Компактнее проводник
+  "workbench.tree.indent": 16,
+  "workbench.activityBar.location": "top",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  // Открывать файл только по двойному клику (как в WebStorm)
+  "workbench.list.openMode": "doubleClick",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "visible",
+  "editor.scrollbar.horizontal": "visible",
+  "editor.renderWhitespace": "selection",
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.renderLineHighlight": "all",
+  "editor.occurrencesHighlight": "multiFile",
+  "editor.selectionHighlight": true,
+  "editor.rulers": [100, 120],
+  "editor.accessibilitySupport": "off",
+
+  // Ctrl + колесо мыши = zoom шрифта
+  "editor.mouseWheelZoom": true,
+
+  // Linked editing - переименование парных HTML/JSX тегов автоматически
+  "editor.linkedEditing": true,
+
+  // Подсветка парных скобок при наведении
+  "editor.matchBrackets": "always",
+
+  // Fold imports по умолчанию (можно раскрыть)
+  "editor.foldingImportsByDefault": true,
+
+  // Подсветка модифицированных табов
+  "workbench.editor.highlightModifiedTabs": true,
+
+  // Drag & drop текста
+  "editor.dragAndDrop": true,
+
+  // Умный выбор при двойном клике (не выделяет точки, дефисы)
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+
+  // Показывать невидимые символы при выделении
+  "editor.renderControlCharacters": true,
+
+  // Hover - задержка перед показом подсказки (ms)
+  "editor.hover.delay": 300,
+
+  // Suggest - автодополнение
+  "editor.suggest.preview": true,
+  "editor.suggest.showStatusBar": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+
+  // Breadcrumbs - навигация сверху
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "on",
+
+  // Восстанавливать все окна при открытии
+  "window.restoreWindows": "all",
+
+  // Не показывать Welcome tab
+  "workbench.startupEditor": "none",
+
+  // Показывать полный путь в title
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}$",
+
+  // Explorer - сортировка файлов
+  "explorer.sortOrder": "type",
+
+  // // Скрыть мусор из поиска и explorer
+  // "files.exclude": {
+  //   "**/.git": true,
+  //   "**/.DS_Store": true,
+  //   "**/node_modules": true,
+  //   "**/dist": true,
+  //   "**/.nuxt": true,
+  //   "**/.output": true
+  // },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/pnpm-lock.yaml": true,
+    "**/package-lock.json": true
+  },
+
+  // Плавный скролл
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+
+  // Копировать всю строку если ничего не выделено
+  "editor.emptySelectionClipboard": true,
+
+  // Font ligatures (=> становится стрелкой, != становится ≠) - если шрифт поддерживает
+  "editor.fontLigatures": true,
+
+  // Показывать unused code приглушённым
+  "editor.showUnused": true,
+
+  // Inline suggestions (для Copilot и подобных)
+  "editor.inlineSuggest.enabled": true,
+  // ============================================================================
+  // TYPESCRIPT
+  // ============================================================================
+
+  // Inlay Hints (подсказки прямо в коде)
+  "editor.inlayHints.enabled": "on",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.enabled": false,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+
+  // Автоимпорты
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "javascript.suggest.autoImports": true,
+
+  // Фиксы при сохранении (только ESLint, без встроенной сортировки - она может конфликтовать)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Автоматическое обновление импортов при перемещении файлов
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Быстрые подсказки
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.includeCompletionsForImportStatements": true,
+
+  // Проверка JS файлов как TS (если нет tsconfig)
+  "js/ts.implicitProjectConfig.checkJs": true,
+
+  // Использовать workspace версию TypeScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // ============================================================================
+  // ФАЙЛЫ И ФОРМАТИРОВАНИЕ
+  // ============================================================================
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+
+  // Prettier
+  "prettier.requireConfig": true,
+
+  // ESLint
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
+
+  // Stylelint
+  "stylelint.enable": true,
+  "stylelint.packageManager": "pnpm",
+  "stylelint.configFile": "stylelint.config.mjs",
+  "stylelint.validate": ["css", "scss", "vue", "html"],
+
+  // Форматтеры по языкам
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // ============================================================================
+  // GIT
+  // ============================================================================
+  "scm.defaultViewMode": "tree",
+  "scm.diffDecorations": "all",
+  "git.decorations.enabled": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+
+  // ============================================================================
+  // EXPLORER & TERMINAL
+  // ============================================================================
+  "explorer.openEditors.visible": 1,
+  "explorer.compactFolders": false,
+
+  // Линии отступов в дереве (как в WebStorm)
+  "workbench.tree.renderIndentGuides": "always",
+
+  // Git Bash как терминал - поддерживает Unix команды (rm, cp, cat, grep)
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // ============================================================================
+  // ЦВЕТА ТЕМЫ (Material Oceanic)
+  // ============================================================================
+  "workbench.colorCustomizations": {
+    "editor.background": "#263238",
+    "editor.foreground": "#C3CEE3",
+    "editor.lineHighlightBackground": "#1b2529",
+    "editor.lineHighlightBorder": "#00000000",
+    "editor.findMatchBackground": "#4A5F6A60",
+    "editor.findMatchHighlightBackground": "#4A5F6A40",
+    "editor.wordHighlightBackground": "#3A474D60",
+    "editor.wordHighlightStrongBackground": "#3A474D90",
+    "editorGutter.background": "#263238",
+    "editorGutter.modifiedBackground": "#80CBC4",
+    "editorGutter.addedBackground": "#C3E88D",
+    "editorGutter.deletedBackground": "#F07178",
+    "editorLineNumber.foreground": "#546E7A",
+    "editorLineNumber.activeForeground": "#B0BEC5",
+    "editorIndentGuide.background1": "#37474F",
+    "editorIndentGuide.activeBackground1": "#4A90A4",
+    "editorRuler.foreground": "#37474F",
+    "editorError.foreground": "#FF5370",
+    "editorError.border": "#FF537040",
+    "editorWarning.foreground": "#FFCB6B",
+    "editorWarning.border": "#FFCB6B40",
+    "editorInfo.foreground": "#82AAFF",
+    "editorInfo.border": "#82AAFF40",
+    "editorGroup.border": "#45494a",
+    "editorGroupHeader.tabsBackground": "#323436",
+    "editorGroupHeader.noTabsBackground": "#323436",
+    "sideBar.background": "#3c3f41",
+    "sideBar.foreground": "#dadee0",
+    "sideBar.border": "#5a5f63",
+    "sideBarTitle.foreground": "#dadee0",
+    "sideBarSectionHeader.foreground": "#dadee0",
+    "sideBarSectionHeader.background": "#3c3f41",
+    "activityBar.background": "#3c3f41",
+    "activityBar.foreground": "#dadee0",
+    "activityBar.inactiveForeground": "#8A9199",
+    "activityBarBadge.background": "#4A90A4",
+    "activityBarBadge.foreground": "#FFFFFF",
+    "tab.activeBackground": "#263238",
+    "tab.activeForeground": "#dadee0",
+    "tab.inactiveBackground": "#3c3f41",
+    "tab.inactiveForeground": "#8A9199",
+    "tab.border": "#45494a",
+    "tab.activeBorder": "#4A90A4",
+    "tab.activeBorderTop": "#4A90A4",
+    "titleBar.activeBackground": "#3c3f41",
+    "titleBar.activeForeground": "#dadee0",
+    "titleBar.inactiveBackground": "#1A1F23",
+    "titleBar.inactiveForeground": "#8A9199",
+    "titleBar.border": "#5a5f63",
+    "statusBar.background": "#3c3f41",
+    "statusBar.foreground": "#dadee0",
+    "statusBar.noFolderBackground": "#3c3f41",
+    "statusBar.debuggingBackground": "#3c3f41",
+    "panel.background": "#3c3f41",
+    "panel.border": "#45494a",
+    "list.activeSelectionBackground": "#263238",
+    "list.activeSelectionForeground": "#dadee0",
+    "list.inactiveSelectionBackground": "#2C3439",
+    "list.inactiveSelectionForeground": "#dadee0",
+    "list.hoverBackground": "#3A474D",
+    "list.hoverForeground": "#dadee0",
+    "list.focusBackground": "#4A5762",
+    "list.highlightForeground": "#82AAFF",
+    "list.focusHighlightForeground": "#82AAFF",
+    "tree.indentGuidesStroke": "#4A90A4",
+    "tree.inactiveIndentGuidesStroke": "#45494a",
+    "tree.tableOddRowsBackground": "#3c3f4115",
+    "input.background": "#2C3439",
+    "input.foreground": "#dadee0",
+    "input.border": "#45494a",
+    "inputOption.activeBorder": "#4A90A4",
+    "dropdown.background": "#2C3439",
+    "dropdown.foreground": "#dadee0",
+    "dropdown.border": "#45494a",
+    "button.background": "#4A90A4",
+    "button.foreground": "#FFFFFF",
+    "button.hoverBackground": "#5FA4BA",
+    "focusBorder": "#4A90A4",
+    "scrollbarSlider.background": "#1a676280",
+    "scrollbarSlider.hoverBackground": "#009688",
+    "scrollbarSlider.activeBackground": "#009688",
+    "gitDecoration.modifiedResourceForeground": "#80CBC4",
+    "gitDecoration.addedResourceForeground": "#C3E88D",
+    "gitDecoration.deletedResourceForeground": "#F07178",
+    "gitDecoration.untrackedResourceForeground": "#C3E88D",
+    "gitDecoration.ignoredResourceForeground": "#AB7967",
+    "gitDecoration.conflictingResourceForeground": "#FC9867",
+    "breadcrumb.foreground": "#8A9199",
+    "breadcrumb.background": "#263238",
+    "breadcrumb.focusForeground": "#dadee0",
+    "breadcrumb.activeSelectionForeground": "#4A90A4",
+    "terminal.background": "#263238",
+    "terminal.foreground": "#C3CEE3",
+    "terminal.ansiBlack": "#263238",
+    "terminal.ansiRed": "#F07178",
+    "terminal.ansiGreen": "#C3E88D",
+    "terminal.ansiYellow": "#FFCB6B",
+    "terminal.ansiBlue": "#82AAFF",
+    "terminal.ansiMagenta": "#C792EA",
+    "terminal.ansiCyan": "#89DDFF",
+    "terminal.ansiWhite": "#C3CEE3",
+    "terminal.ansiBrightBlack": "#546E7A",
+    "terminal.ansiBrightRed": "#FF5370",
+    "terminal.ansiBrightGreen": "#C3E88D",
+    "terminal.ansiBrightYellow": "#FFD590",
+    "terminal.ansiBrightBlue": "#82AAFF",
+    "terminal.ansiBrightMagenta": "#C792EA",
+    "terminal.ansiBrightCyan": "#89DDFF",
+    "terminal.ansiBrightWhite": "#FFFFFF"
+  },
+  // ============================================================================
+  // TEXTMATE RULES (для токенов без semantic highlighting)
+  // ============================================================================
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // Vue <script>, <style>, <template> tags - зелёный
+      {
+        "scope": ["entity.name.tag.script.html.vue", "entity.name.tag.style.html.vue", "entity.name.tag.template.html.vue"],
+        "settings": { "foreground": "#26bda4" }
+      },
+      // Nested <template> inside main template - красный
+      {
+        "scope": ["meta.template-tag.start entity.name.tag.template.html.vue"],
+        "settings": { "foreground": "#F07178" }
+      },
+      // Vue components (PascalCase tags like <ActiveBalance>) - зелёный
+      {
+        "scope": ["meta.tag.other.unrecognized.html.derivative entity.name.tag.html"],
+        "settings": { "foreground": "#26bda4" }
+      },
+      // Tag brackets <> - голубой
+      {
+        "scope": ["punctuation.definition.tag.begin.html.vue", "punctuation.definition.tag.end.html.vue"],
+        "settings": { "foreground": "#89DDFF" }
+      },
+      // Vue directives (v-if, v-for, v-show, etc) - золотой
+      {
+        "scope": ["keyword.control.conditional.vue", "keyword.control.loop.vue", "meta.attribute.directive"],
+        "settings": { "foreground": "#FFCB6B", "fontStyle": "italic" }
+      },
+      // CSS element selectors (body, div, span, etc) - красный
+      {
+        "scope": ["entity.name.tag.css"],
+        "settings": { "foreground": "#F07178" }
+      },
+      // CSS pseudo-classes (:root, :hover, etc) - фиолетовый
+      {
+        "scope": ["entity.other.attribute-name.pseudo-class.css", "entity.other.attribute-name.pseudo-element.css"],
+        "settings": { "foreground": "#C792EA", "fontStyle": "italic" }
+      },
+      // CSS variables (--text-muted, etc) - золотой
+      {
+        "scope": ["variable.css", "variable.argument.css"],
+        "settings": { "foreground": "#FFCB6B" }
+      },
+      // CSS property values (transparent, inherit, fonts, etc) - красный
+      {
+        "scope": ["support.constant.property-value.css", "support.constant.font-name.css", "support.constant.color.w3c-standard-color-name.css", "meta.property-value.css"],
+        "settings": { "foreground": "#F07178" }
+      },
+      // CSS functions (var, calc, rgb, etc) - синий
+      {
+        "scope": ["support.function.misc.css", "support.function.transform.css", "support.function.calc.css", "support.function.gradient.css"],
+        "settings": { "foreground": "#82AAFF" }
+      },
+      // CSS vendor prefixes (-apple-system, etc) and units (px, em, %) - красный
+      {
+        "scope": ["support.constant.vendored.property-value.css", "keyword.other.unit.css", "keyword.other.unit.px.css", "keyword.other.unit.rem.css", "keyword.other.unit.em.css", "keyword.other.unit.deg.css", "keyword.other.unit.s.css", "keyword.other.unit.ms.css", "keyword.other.unit.vh.css", "keyword.other.unit.vw.css"],
+        "settings": { "foreground": "#F07178", "fontStyle": "" }
+      },
+      // CSS colors (#ff6b6b, etc) - голубой
+      {
+        "scope": ["constant.other.color.rgb-value.hex.css", "constant.other.color.rgb-value.css", "keyword.other.unit.percentage.css"],
+        "settings": { "foreground": "#89DDFF" }
+      },
+      // CSS numbers (48, 0.5, etc) - красный
+      {
+        "scope": ["constant.numeric.css"],
+        "settings": { "foreground": "#F07178" }
+      },
+      // CSS @keyframes - фиолетовый
+      {
+        "scope": ["keyword.control.at-rule.keyframes.css"],
+        "settings": { "foreground": "#C792EA", "fontStyle": "italic" }
+      },
+      // CSS keyframe name (spin) and offsets (from, to) - золотой
+      {
+        "scope": ["variable.parameter.keyframe-list.css", "entity.other.keyframe-offset.css", "entity.other.keyframe-offset.percentage.css"],
+        "settings": { "foreground": "#FFCB6B" }
+      },
+      // All imports - белый (различить default/named невозможно в textMate)
+      {
+        "scope": ["variable.other.readwrite.alias"],
+        "settings": { "foreground": "#EEFFE3" }
+      },
+      {
+        "scope": ["variable.other.readwrite"],
+        "settings": { "foreground": "#EEFFE3" }
+      },
+
+      // Keywords (const, let, var, class, function, new, etc)
+      {
+        "scope": ["keyword", "keyword.operator.new", "storage.type", "storage.modifier"],
+        "settings": { "foreground": "#C792EA", "fontStyle": "italic" }
+      },
+      // Import/Export/From (без italic)
+      {
+        "scope": ["keyword.control.import", "keyword.control.export", "keyword.control.from", "keyword.control.default", "keyword.operator.expression.import"],
+        "settings": { "foreground": "#C792EA" }
+      },
+      // Import * - голубой
+      {
+        "scope": ["constant.language.import-export-all"],
+        "settings": { "foreground": "#89DDFF" }
+      },
+      // Template literal ${} - голубой
+      {
+        "scope": ["punctuation.definition.template-expression.begin", "punctuation.definition.template-expression.end"],
+        "settings": { "foreground": "#89DDFF" }
+      },
+      // Control flow (if/else/return/try/catch)
+      {
+        "scope": ["keyword.control.conditional", "keyword.control.trycatch", "keyword.control.flow"],
+        "settings": { "foreground": "#C792EA" }
+      },
+      // as, keyof, typeof, infer - фиолетовый
+      {
+        "scope": ["keyword.control.as", "keyword.operator.expression.keyof", "keyword.operator.expression.typeof", "keyword.operator.expression.infer"],
+        "settings": { "foreground": "#C792EA" }
+      },
+      // Type operators (|, &)
+      {
+        "scope": ["keyword.operator.type"],
+        "settings": { "foreground": "#89DDFF" }
+      },
+      // Operators (=, ==, +, -, =>, etc)
+      {
+        "scope": ["keyword.operator", "storage.type.function.arrow"],
+        "settings": { "foreground": "#89DDFF", "fontStyle": "" }
+      },
+      // Punctuation
+      {
+        "scope": ["punctuation.accessor", "punctuation.separator", "punctuation.terminator", "punctuation.definition.block", "punctuation.definition.parameters", "punctuation.definition.array", "punctuation.definition.typeparameters", "meta.brace"],
+        "settings": { "foreground": "#89DDFF" }
+      },
+      // Comments
+      {
+        "scope": ["comment", "comment.line", "comment.block", "punctuation.definition.comment"],
+        "settings": { "foreground": "#546E7A", "fontStyle": "italic" }
+      },
+      // JSDoc tags
+      {
+        "scope": ["storage.type.class.jsdoc", "entity.name.type.instance.jsdoc"],
+        "settings": { "foreground": "#C792EA", "fontStyle": "bold italic" }
+      },
+      // Strings
+      {
+        "scope": ["string", "string.quoted", "string.regexp"],
+        "settings": { "foreground": "#C3E88D" }
+      },
+      // String escapes
+      {
+        "scope": ["constant.character.escape", "constant.other.placeholder"],
+        "settings": { "foreground": "#89DDFF" }
+      },
+      // Numbers
+      {
+        "scope": ["constant.numeric"],
+        "settings": { "foreground": "#F78C6C" }
+      },
+      // Boolean, null, undefined
+      {
+        "scope": ["constant.language.boolean", "constant.language.null", "constant.language.undefined", "constant.language.nan"],
+        "settings": { "foreground": "#C792EA", "fontStyle": "italic" }
+      },
+      // this, super
+      {
+        "scope": ["variable.language.this", "variable.language.super"],
+        "settings": { "foreground": "#C792EA" }
+      },
+      // Primitive types (string, number, boolean)
+      {
+        "scope": ["support.type.primitive", "support.type.builtin"],
+        "settings": { "foreground": "#C792EA" }
+      },
+      // Type parameters (T, K, V)
+      {
+        "scope": ["entity.name.type.parameter"],
+        "settings": { "foreground": "#FFCB6B" }
+      },
+      // Console
+      {
+        "scope": ["support.class.console"],
+        "settings": { "foreground": "#FFCB6B" }
+      },
+      // Debugger
+      {
+        "scope": ["keyword.other.debugger"],
+        "settings": { "foreground": "#F78C6C" }
+      },
+      // HTML/JSX tags
+      {
+        "scope": ["entity.name.tag", "punctuation.definition.tag"],
+        "settings": { "foreground": "#F07178" }
+      },
+      // HTML/JSX attributes
+      {
+        "scope": ["entity.other.attribute-name"],
+        "settings": { "foreground": "#FFCB6B", "fontStyle": "italic" }
+      },
+      // Decorators
+      {
+        "scope": ["meta.decorator", "punctuation.decorator"],
+        "settings": { "foreground": "#82AAFF" }
+      },
+      // JSON keys
+      {
+        "scope": ["support.type.property-name.json", "meta.structure.dictionary.key.json"],
+        "settings": { "foreground": "#C792EA" }
+      },
+      // JSON constants
+      {
+        "scope": ["constant.language.json"],
+        "settings": { "foreground": "#F78C6C", "fontStyle": "italic" }
+      },
+      // CSS property names
+      {
+        "scope": ["support.type.property-name.css"],
+        "settings": { "foreground": "#B2CCD6" }
+      },
+      // CSS classes/IDs
+      {
+        "scope": ["entity.other.attribute-name.class.css", "entity.other.attribute-name.id.css"],
+        "settings": { "foreground": "#FFCB6B" }
+      },
+      // Function calls - italic
+      {
+        "scope": ["meta.function-call entity.name.function"],
+        "settings": { "foreground": "#82AAFF", "fontStyle": "italic" }
+      },
+      // Getter/Setter declarations - синий
+      {
+        "scope": ["meta.definition.method entity.name.function"],
+        "settings": { "foreground": "#82AAFF" }
+      },
+      // Object variables (Sentry, axios, etc) - белый
+      {
+        "scope": ["variable.other.object"],
+        "settings": { "foreground": "#EEFFFF" }
+      },
+      // Properties without type info (any) - grey fallback
+      {
+        "scope": ["variable.other.property"],
+        "settings": { "foreground": "#b7bbbd" }
+      },
+    ]
+  },
+
+  // ============================================================================
+  // MISC
+  // ============================================================================
+  "claudeCode.preferredLocation": "panel",
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true,
+  "workbench.colorTheme": "My Oceanic"
+}
